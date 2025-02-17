@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/estilo.css">
+        <script>
+            // Elemento ainda não foi criado e lido, retornará null
+            const semElemento = document.getElementById('primeiro')
+            console.log('semEl...', semElemento)
+        </script>
+    </head>
+
+    <body id="exercicio">
+        <div id="primeiro">#primeiro</div>
+        <div id="segundo">#segundo</div>
+        <div id="terceiro">#terceiro</div>
+
+        <script>
+            // O local ideal para selecionar elementos, é no final da tag body
+            const el = document.getElementById('primeiro')
+            console.log('el...', el)
+        </script>
+    </body>
+</html>
