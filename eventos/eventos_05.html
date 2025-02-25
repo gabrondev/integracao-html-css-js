@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/estilo.css">
+    </head>
+
+    <body id="exercicio">
+        <main class="coluna">
+            <h1>Formulário</h1>
+
+            <form class="coluna" action="https://google.com/search">
+                <input type="text" name="q" placeholder="Digite o termo...">
+                <select name="hl">
+                    <option value="pt-BR">Português (Brasil)</option>
+                    <option value="en-US">Inglês (Americano)</option>
+                </select>
+
+                <button web-submit>Pesquisar</button>
+            </form>
+        </main>
+
+        <script>
+            function submeter(evento){
+                evento.preventDefault()
+                console.log('submetendo o formulário')
+            }
+
+            const botoes = document.querySelectorAll('[web-submit]')
+            botoes.forEach(el => el.onclick = submeter)
+        </script>
+    </body>
+</html>
